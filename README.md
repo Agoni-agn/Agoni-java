@@ -36,7 +36,7 @@ implementation 'com.github.你的GitHub用户名.仓库名:agoni-java:版本号'
 ```
 
 > 例如用户名是 `Agoni-agn`, 仓库名是 `Agoni-java`:
-> `implementation 'com.github.Agoni-agn.Agoni-java:agoni-java:1.0.0'`
+> `implementation 'com.github.Agoni-agn.Agoni-java:agoni-java:1.0.1'`
 >
 > 版本号可以是 GitHub 的 tag(如 `1.0.0`)、commit 哈希, 或 `master-SNAPSHOT`(最新提交)。
 > 准确的坐标以 jitpack.io 页面显示的为准。
