@@ -1,4 +1,4 @@
-package io.github.zeroaicy.util.crash;
+package com.agoni.util.crash;
 
 import android.os.Environment;
 import android.util.Log;
@@ -7,7 +7,7 @@ import java.io.File;
 import android.os.*;
 import android.widget.TextView;
 import android.text.TextWatcher;
-import io.github.zeroaicy.util.ContextUtil;
+import com.agoni.util.ContextUtil;
 import android.content.Intent;
 import android.app.Activity;
 import android.content.Context;
@@ -59,7 +59,7 @@ public class CrashApphandler extends CrashAppLog implements CrashAppLog.OnCrashL
 			context = ContextUtil.getContext();
 		}
 		
-		Intent intent = new Intent(context, io.github.zeroaicy.util.crash.CrashActivity.class);
+		Intent intent = new Intent(context, com.agoni.util.crash.CrashActivity.class);
 		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		intent.putExtra(CrashApphandler.CrashActivityKey, crashInfo);
 		//启动活动

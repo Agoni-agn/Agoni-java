@@ -1,9 +1,9 @@
-package io.github.zeroaicy.util;
+package com.agoni.util;
 
 import android.app.*;
 import android.content.*;
 import android.os.*;
-import io.github.zeroaicy.util.reflect.*;
+import com.agoni.util.reflect.*;
 import java.util.*;
 
 public class ContextUtil{

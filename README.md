@@ -9,10 +9,16 @@ Android 工具类库, 包含崩溃日志、反射、文件/IO、日志、通知�
 | `agoni-java` | 工具类库(发布到 JitPack 的模块) |
 | `app` | 示例/测试 App |
 
-工具类代码位于 `io.github.zeroaicy.util` 包:
+工具类代码位于 `com.agoni.util` 包:
 - `crash/` — 崩溃捕获与界面
 - `reflect/` — 反射工具(HiddenApiBypass、ReflectPie、UnsafeX)
 - `ContextUtil`、`DebugUtil`、`FileUtil`、`IOUtils`、`Log`、`MD5Util`、`NotificationUtil`、`ScreenUtil`、`SystemMemory`、`UriUtil`
+
+## 内置依赖
+
+本库已 `api` 依赖最新稳定版 **Material3** (`com.google.android.material:material:1.14.0`), 使用本库的项目无需再手动添加, 即可直接使用 Material3 组件(如 `com.google.android.material.button.MaterialButton` 等)。
+
+> 注意: 由于 Material3 的要求, 使用本库的项目 `compileSdk` 需要 ≥ 35。
 
 ## 发布到 GitHub + JitPack
 
@@ -36,9 +42,9 @@ implementation 'com.github.你的GitHub用户名:仓库名:版本号'
 ```
 
 > 实际坐标(已发布):
-> `implementation 'com.github.Agoni-agn:Agoni-java:1.0.2'`
+> `implementation 'com.github.Agoni-agn:Agoni-java:1.0.3'`
 >
-> 版本号可以是 GitHub 的 tag(如 `1.0.2`)、commit 哈希, 或 `main-SNAPSHOT`(最新提交)。
+> 版本号可以是 GitHub 的 tag(如 `1.0.3`)、commit 哈希, 或 `main-SNAPSHOT`(最新提交)。
 > 准确的坐标以 jitpack.io 页面显示的为准。
 
 ## 启用崩溃日志功能
@@ -47,12 +53,12 @@ implementation 'com.github.你的GitHub用户名:仓库名:版本号'
 
 ```xml
 <application
-    android:name="io.github.zeroaicy.util.crash.CrashApplication"
+    android:name="com.agoni.util.crash.CrashApplication"
     ... >
 ```
 
 并在代码中调用:
 
 ```java
-io.github.zeroaicy.util.DebugUtil.debug(getApplicationContext());
+com.agoni.util.DebugUtil.debug(getApplicationContext());
 ```

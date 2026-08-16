@@ -1,5 +1,5 @@
 
-package io.github.zeroaicy.util;
+package com.agoni.util;
 
 /*
  * Copyright (C) 2006 The Android Open Source Project
@@ -18,7 +18,7 @@ package io.github.zeroaicy.util;
  */
 
 import android.text.TextUtils;
-import io.github.zeroaicy.util.reflect.ReflectPie;
+import com.agoni.util.reflect.ReflectPie;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

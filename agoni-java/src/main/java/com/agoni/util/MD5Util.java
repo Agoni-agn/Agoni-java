@@ -1,4 +1,4 @@
-package io.github.zeroaicy.util;
+package com.agoni.util;
 
 
 import java.security.MessageDigest;

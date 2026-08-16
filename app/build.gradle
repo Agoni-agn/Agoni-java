@@ -2,7 +2,7 @@ apply plugin: "com.android.application"
 
 android {
 	buildToolsVersion "34.0.0"
-	compileSdkVersion 34
+	compileSdkVersion 35
 	
 	namespace "com.agoni.java"
 	defaultConfig {

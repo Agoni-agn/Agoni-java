@@ -3,9 +3,9 @@ apply plugin: 'maven-publish'
 
 android {
 	buildToolsVersion "34.0.0"
-	compileSdkVersion 34
+	compileSdkVersion 35
 
-	namespace "io.github.zeroaicy.util"
+	namespace "com.agoni.util"
 
 	defaultConfig {
 		minSdkVersion 26
@@ -32,6 +32,12 @@ android {
 			withSourcesJar()
 		}
 	}
+}
+
+dependencies {
+	// Material3(最新稳定版, Material Components for Android 最终版)
+	// 用 api 让使用本库的项目也能直接用到 Material3 组件
+	api 'com.google.android.material:material:1.14.0'
 }
 
 afterEvaluate {

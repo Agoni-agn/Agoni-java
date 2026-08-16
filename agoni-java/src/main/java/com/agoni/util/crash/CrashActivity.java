@@ -1,4 +1,4 @@
-package io.github.zeroaicy.util.crash;
+package com.agoni.util.crash;
 
 
 import android.app.Activity;
@@ -20,7 +20,7 @@ import java.util.*;
 import android.content.*;
 import android.view.*;
 import android.provider.*;
-import io.github.zeroaicy.util.*;
+import com.agoni.util.*;
 import android.text.*;
 import android.media.*;
 import android.view.PixelCopy.*;

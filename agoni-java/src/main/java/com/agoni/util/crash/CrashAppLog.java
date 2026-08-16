@@ -1,4 +1,4 @@
-package io.github.zeroaicy.util.crash;
+package com.agoni.util.crash;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -7,8 +7,8 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.Looper;
 import android.widget.Toast;
-import io.github.zeroaicy.util.ContextUtil;
-import io.github.zeroaicy.util.Log;
+import com.agoni.util.ContextUtil;
+import com.agoni.util.Log;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileFilter;

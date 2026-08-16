@@ -1,4 +1,4 @@
-package io.github.zeroaicy.util.reflect;
+package com.agoni.util.reflect;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

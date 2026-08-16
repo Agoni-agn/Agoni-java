@@ -1,10 +1,10 @@
-package io.github.zeroaicy.util.crash;
+package com.agoni.util.crash;
 
 import android.app.Application;
 import android.content.Context;
-import io.github.zeroaicy.util.ContextUtil;
-import io.github.zeroaicy.util.DebugUtil;
-import io.github.zeroaicy.util.FileUtil;
+import com.agoni.util.ContextUtil;
+import com.agoni.util.DebugUtil;
+import com.agoni.util.FileUtil;
 
 public class CrashApplication extends Application{
 

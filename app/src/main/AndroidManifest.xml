@@ -22,13 +22,13 @@
 
     <application
         android:allowBackup="true"
-        android:name="io.github.zeroaicy.util.crash.CrashApplication"
+        android:name="com.agoni.util.crash.CrashApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:requestLegacyExternalStorage="true"
         android:resizeableActivity="true">
-        <!-- android:name="io.github.zeroaicy.util.crash.CrashApplication" 这一个是crash崩溃日志功能-->
+        <!-- android:name="com.agoni.util.crash.CrashApplication" 这一个是crash崩溃日志功能-->
         <!--安卓11开始必须添加 所有文件访问权限 android:requestLegacyExternalStorage="true"-->
         <!--使用 android:theme="@style/AppTheme.Translucent" 可隐藏默认Toolbar导航栏-->
 		
@@ -46,11 +46,11 @@
         <!-- 如果你啥都不懂 不要动下面 你可以删除 -->
         <!-- 下面崩溃日志功能界面如果你删除了 java文件夹的io 把这里和上面application的name也一并删除了不然会闪退 -->
         <activity
-            android:name="io.github.zeroaicy.util.crash.CrashActivity"
+            android:name="com.agoni.util.crash.CrashActivity"
             android:exported="false"
             android:process=":crash" />
             <!-- 分享崩溃截图必要 请勿删除 如果使用取消注释 -->
-            <!-- 将app/src/main/java/io/github/zeroaicy/util/crash/CrashActivity.java文件的注释也一并删除-->
+            <!-- 将app/src/main/java/com/agoni/util/crash/CrashActivity.java文件的注释也一并删除-->
             <!--provider
 				android:name="android.support.v4.content.FileProvider"
 				android:authorities="${applicationId}.fileprovider"

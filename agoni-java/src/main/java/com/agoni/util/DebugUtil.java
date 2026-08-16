@@ -1,6 +1,6 @@
-package io.github.zeroaicy.util;
+package com.agoni.util;
 import android.content.Context;
-import io.github.zeroaicy.util.crash.CrashApplication;
+import com.agoni.util.crash.CrashApplication;
 
 public class DebugUtil{
 	
