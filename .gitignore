@@ -7,3 +7,5 @@ local.properties
 .idea/
 captures/
 .DS_Store
+# 本地发布脚本(含令牌, 禁止提交到 GitHub)
+发布.sh
