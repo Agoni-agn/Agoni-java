@@ -32,7 +32,7 @@ publishing {
 		release(MavenPublication) {
 			// JitPack 会自动覆盖 groupId 为 com.github.你的GitHub用户名 和 version 为 tag
 			groupId = 'com.github.Agoni-agn'
-			artifactId = 'agonilibrary'
+			artifactId = 'agoni-java'
 			version = '1.0'
 
 			afterEvaluate {

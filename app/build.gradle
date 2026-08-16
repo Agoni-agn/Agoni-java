@@ -70,7 +70,7 @@ android {
 
 dependencies {
 	// 依赖本地 library 模块(工具类库)
-	implementation project(':agonilibrary')
+	implementation project(':agoni-java')
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
 	//崩溃日志必要 ※非常重要 
 	//如果使用取消下面注释
