@@ -25,17 +25,24 @@ android {
 			proguardFiles getDefaultProguardFile('proguard-android.txt')
 		}
 	}
+
+	// AGP 8.0 起不会自动创建 components.release, 必须显式声明要发布的 variant
+	publishing {
+		singleVariant("release") {
+			withSourcesJar()
+		}
+	}
 }
 
-publishing {
-	publications {
-		release(MavenPublication) {
-			// JitPack 会自动覆盖 groupId 为 com.github.你的GitHub用户名 和 version 为 tag
-			groupId = 'com.github.Agoni-agn'
-			artifactId = 'agoni-java'
-			version = '1.0'
+afterEvaluate {
+	publishing {
+		publications {
+			release(MavenPublication) {
+				// JitPack 会自动覆盖 groupId 为 com.github.你的GitHub用户名 和 version 为 tag
+				groupId = 'com.github.Agoni-agn'
+				artifactId = 'agoni-java'
+				version = '1.0'
 
-			afterEvaluate {
 				from components.release
 			}
 		}
