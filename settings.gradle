@@ -1,1 +1,1 @@
-include ':app', ':agoni-java'
+include ':agoni-java'
